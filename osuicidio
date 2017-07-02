@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="http://findicons.com/files/icons/1799/bathroom/16/duck.png" type="image/ico" />
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<html><title>páSUMÁRIO</title><head>
+    <meta charset="UTF-8">    
+		</head><body><style>
+      
+
+
+#navbar { font: 900 11px open sans; letter-spacing: 1px; color: #fff; text-transform: uppercase; border-top: 4px solid #fff; padding-top: 10px; padding-bottom: 45px; width: 370px; margin-left: 200px; margin-top: -15px; }
+#navbar a { padding-right: 44px; cursor: pointer; }
+
+#carrossel { padding: 50px 20px; width: 1200px; }
+#carrossel img { margin: 0px 10px; }
+#carrossel a { cursor: pointer; color: white; font-size: 100px; margin-top: 10px; position: absolute; }
+
+#pa-home { background-color: #f3f9ff; margin: 15px; }
+#pa-home t { color: #fff; font: 100 130px Open Sans; }
+#pa-home a { text-decoration: none; }
+
+@keyframes cores {
+0%{ background-color: #f1e573; opacity: 0.3; }
+33%{ background-color: #5cd9ea; opacity: 0.3; } 
+66%{ background-color: #e85d5d; opacity: 0.3; }
+100%{ background-color: #f1e573; opacity: 0.3; } }
+
+
+.mat-capa { margin-bottom: 100px; background: #eee no-repeat top center; width: 100%; padding: 70px 0px; height: 460px; font: 400 13px lato; text-align: justify;  }
+.mat-capa p { margin-bottom: -12px; text-indent: 25px; line-height: 140%; }
+
+#pa-home tit { font: italic bold 50px Playfair Display; text-align: center; display: block;  line-height: 100%; }
+#pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; }
+
+.mat-quote { font: 700 italic 25px playfair display; text-align: left; line-height: 100%; padding: 40px 0px; color: #e85d5d; }
+
+    .sp-slideshow { position: relative; margin: 0px auto; width: 1300px; height: 600px; }
+    .sp-content { background: #fff; position: relative; width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-parallax-bg {background: #f3f9ff; -webkit-background-size: cover;-moz-background-size: cover;background-size: cover;position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-slideshow input {position: absolute;bottom: 15px;left: 50%;width: 9px;height: 9px;z-index: 1001;cursor: pointer;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;}
+    
+    .sp-slideshow input + label {position: absolute;bottom: 15px;left: 50%;width: 6px;height: 6px;display: block;z-index: 1000;border: 3px solid #fff;border: 3px solid rgba(255,255,255,0.9);-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;-webkit-transition: background-color linear 0.1s;-moz-transition: background-color linear 0.1s;-o-transition: background-color linear 0.1s;-ms-transition: background-color linear 0.1s;transition: background-color linear 0.1s;}
+    .sp-slideshow input:checked + label {background-color: #fff; background-color: rgba(255,255,255,0.9);}
+    
+
+</style>
+<style>
+    .sp-selector-1, .button-label-1 {margin-left: -36px;}
+    .sp-selector-2, .button-label-2 {margin-left: -18px;}
+    .sp-selector-3, .button-label-3 {margin-left: 0px;}
+    .sp-selector-4, .button-label-4 {margin-left: 18px;}
+    .sp-selector-5, .button-label-5 {margin-left: 36px;}
+    
+    .sp-arrow {position: absolute;top: 50%;width: 28px;height: 37px;margin-top: -19px;display: none;cursor: pointer;z-index: 1000; background: center top transparent url(http://i.imgur.com/hEfN7rx.png) no-repeat;-webkit-transition: opacity linear 0.3s;-moz-transition: opacity linear 0.3s;-o-transition: opacity linear 0.3s;-ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;}
+    .sp-arrow:hover{opacity: 1;}
+    .sp-arrow:active{margin-top: -18px;}
+    .sp-selector-1:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-2:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a4,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a5 {right: 15px;display: block;background-position: top right;}
+    .sp-selector-2:checked ~ .sp-arrow.sp-a1,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-5:checked ~ .sp-arrow.sp-a4 {left: 15px;display: block;background-position: top left;}
+    
+    
+    .sp-slideshow input:checked ~ .sp-content {-webkit-transition: background-position linear 0.6s, background-color linear 0.8s;-moz-transition: background-position linear 0.6s, background-color linear 0.8s;-o-transition: background-position linear 0.6s, background-color linear 0.8s;-ms-transition: background-position linear 0.6s, background-color linear 0.8s;transition: background-position linear 0.6s, background-color linear 0.8s;}
+    
+    .sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {-webkit-transition: background-position linear 0.7s;-moz-transition: background-position linear 0.7s;-o-transition: background-position linear 0.7s;-ms-transition: background-position linear 0.7s;transition: background-position linear 0.7s;}
+    
+    input.sp-selector-1:checked ~ .sp-content {background-position: 0 0;background-color: #727b7f;} 
+    input.sp-selector-2:checked ~ .sp-content {background-position: -100px 0; background-color:#7f7276;} 
+    input.sp-selector-3:checked ~ .sp-content {background-position: -200px 0;background-color: #737f72;} 
+    input.sp-selector-4:checked ~ .sp-content {background-position: -300px 0;background-color: #79727f;} 
+    input.sp-selector-5:checked ~ .sp-content {background-position: -400px 0;background-color: #7d7f72;} 
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    
+    .sp-slider { position: relative;left: 0; width: 500%;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
+    
+    .sp-slider > li {
+    height:100%;
+    padding:0 60px;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+    text-align:center;
+    opacity:0.4; 
+    -webkit-transition:opacity ease-in 0.4s 0.8s;
+    -moz-transition:opacity ease-in 0.4s 0.8s;
+    -o-transition:opacity ease-in 0.4s 0.8s;
+    -ms-transition:opacity ease-in 0.4s 0.8s;
+    transition:opacity ease-in 0.4s 0.8s; } 
+    
+    .sp-slider > li img{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;display: block;margin: 0 auto;padding: 40px 0 50px 0;max-height: 100%;max-width: 100%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider {left: 0;}
+    input.sp-selector-2:checked ~ .sp-content .sp-slider {left: -100%;}
+    input.sp-selector-3:checked ~ .sp-content .sp-slider {left: -200%;}
+    input.sp-selector-4:checked ~ .sp-content .sp-slider {left: -300%;}
+    input.sp-selector-5:checked ~ .sp-content .sp-slider {left: -400%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+    input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+    input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+    input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+    input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){ opacity: 1; }
+    
+
+
+
+</style>
+<center>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; top: 0; z-index: 99999999;"></div>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; bottom: 0; z-index: 99999999;"></div>
+<div id="pa-home">
+
+      <div style="background: #f1e573; padding-top: 70px; padding-bottom: 50px;">
+      <a href="https://paideias.github.io/home/"><t>PÁ IDEIAS</t></a>
+            <div id="navbar"><a>comprar</a><a>edições</a><a>favoritos</a><a>contato</a></div>
+      <div id="carrossel">
+      <a style="margin-left: -80px;">❮</a>
+      
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        
+      <a style="margin-left: 25px;">❯</a>  
+      </div></div>
+
+  
+
+
+
+
+
+
+<div class="sp-slideshow">
+            
+   <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+   <label for="button-1" class="button-label-1"></label>
+    
+   <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+   <label for="button-2" class="button-label-2"></label>
+    
+   <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+   <label for="button-3" class="button-label-3"></label>
+    
+    
+   <label for="button-1" class="sp-arrow sp-a1"></label>
+   <label for="button-2" class="sp-arrow sp-a2"></label>
+   <label for="button-3" class="sp-arrow sp-a3"></label>
+
+    
+   <div class="sp-content">
+       <div class="sp-parallax-bg"></div>
+       <ul class="sp-slider clearfix">
+           <li>
+           
+           
+           
+           
+           
+           <div class="mat-capa" style="background: #fff right center url(http://i.imgur.com/lWG7iSG.jpg) no-repeat;">
+  <div style="padding: 155px 50px 0px 50px; height: 150px; width: 540px; color:black;">
+    <tit>O suicídio da fotógrafa<br> Francesca Woodman</tit><p><br>
+  <center><subt>segundo o filósofo Arthur Danto</subt></center></div>
+  
+  <div style="height: 105px; padding: 40px 60px 0px 60px; width: 290px;"><p>O filósofo e crítico de arte Arthur Danto, na revista The Nation, na coluna “Darkness Visible”, em 15 de novembro de 2004, comentou sobre a fotógrafa Francesca Woodman e os mistérios da sua morte em sua própria arte.</p></div>
+  
+</div>
+           
+           
+           
+  
+</li>
+<li>
+             
+             
+             <div class="mat-capa" style="background: #fff url(http://i.imgur.com/txSZOJr.png);">
+  <div style="padding: 0px 60px; margin-top: -20px; width: 500px; float: left;">
+   <p>A artista extremamente talentosa Francesca Woodman terminou abruptamente sua breve vida e carreira em 19 de janeiro de 1981, saltando para a morte de uma janela do seu estúdio em Nova York. Francesca tinha 22 anos, quando cometeu suicídio. A obra de seus oito anos produtivos foi exposta, entre outros lugares, no Museu de Arte da Cidade de Helsínquia, na Finlândia; na Marian Goodman Gallery, em Nova York, em 2004; e na Galeria Mendes Woode (Mendes Wood DM), em São Paulo, em 2012.</p>
+<p>Francesca Woodman ficou famosa pelos seus trabalhos em preto e branco, onde utilizou da sua própria imagem ou modelos femininos. Muitas das suas fotografias mostram jovens mulheres nuas, desfocadas (devido ao movimento e longos tempos de exposição), fundindo com os seus arredores, ou com os seus rostos velados.</p>
+<p>Arthur Danto afirma que teria sido mágico e enigmático qualquer que fosse o destino da jovem fotógrafa Francesca Woodman, mas o seu suicídio causou aos espectadores uma curiosidade em saber se ele foi prenunciado em suas fotografias.</p>
+  <div class="mat-quote" style="width: 600px; margin-left: -100px; margin-bottom: -20px; ">"Teria sido mágico e enigmaático qualquer que fosse o destino da jovem fotógrafa Francesca Woodman"</div> 
+  <p>Mas, segundo Danto, a relação entre a vida de um artista e o seu trabalho é sempre provisória, mesmo quando a vida parece, obviamente, ter sido o objeto do trabalho, como é o caso do famoso escritor Marcel Proust. A melhor razão para a leitura da biografia de Proust, por exemplo, é aprender como diferente são a sua vida e o seu grande romance literário, apesar da interna relação entre os dois. A diferença entre esse autor e o narrador da sua obra “Em Busca do Tempo Perdido” é uma intrincada questão de interpretação.</p>
+</div>
+
+<div style="padding-right: 60px; margin-top: -20px; width: 200px; float: right;">
+<p>Estando ou não o suicídio de Francesca projetado em sua arte, o seu trabalho parece revelar sua vida interior, não só porque Francesca é tipicamente o seu próprio modelo para as suas fotografias, mas por causa do jeito que em Francesca cria imagens de si mesma: as fotografias são de uma mulher jovem, freqüentemente nua, muitas vezes usando tipos de roupas vintage (retrógrada) ou íntimas roupas que os amigos de Francesca diziam que ela usava a todo tempo. A jovem fotógrafa geralmente aparece sozinha em quartos, em grande parte vazios, com paredes manchadas e peças de móveis de segunda mão, que ela usava como estúdio ou espaço de trabalho ou ambos. Então, as pessoas têm debruçado muito sobre as fotografias dela, com olhos forenses, à procura de pistas sobre o seu suicídio.</p>
+</div>
+</div>
+             
+             
+             
+             
+             
+           </li>
+           <li>
+             
+             
+             
+             <div class="mat-capa" style="background: #fff url(http://i.imgur.com/d5A9lCP.png) no-repeat;">
+  <div style="padding: 0px 60px; margin-top: -20px; width: 500px; float: right;">
+ 
+ <p>Enfim, até hoje estudiosos continuam a buscar evidências, realmente embasadas, de um prenúncio do seu suicídio em suas obras fotográficas, as quais Francesca utilizou de elementos como o simbolismo, o Barroco, o Surrealismo e o Futurismo. Hoje, muitos consideram uma arte mais conceitual.</p>
+<p>Francesca conseguiu revelar sua alma — o romantismo, a alegria, o medo, a ambição, o feminismo e a angústia de uma menina — por meio da exposição do corpo. Agora reconhecida pelo mundo das artes, deixou obras lindas. Alguns textos de seu diário mostram como era intensa, ambiciosa, ansiosa por reconhecimento. Em uma de suas frases afirma que é vaidosa e masoquista e se indaga como pode ser as duas coisas.</p>
+<p>Suas fotografias são, como toda arte dessa natureza, tão poderosas que é impossível passar por elas sem ser atraído, sem sentir certa perturbação e angústia, sem pensar nos limites do corpo. Francesca explora o corpo humano, seus limites e temas como a solidão, a morte e o feminino.</p>
+<p>Para os interessados, em 2010 foi lançado o documentário “The Woodmans”, realizado por C. Scott Willis (ainda não legendado em português). O filme fala sobre a família e vida da fotógrafa Francesca, traz depoimentos de familiares próximos, como seu irmão, fala sobre a relação e importância da arte na vida de Francesca e seu trágico fim. Sem dúvida, a arte era o sentido da sua vida e foi após um bloqueio criativo que afetou todo o seu processo lhe impedindo de produzir, que ela entrou numa crise e desequilibrou-se a ponto de se matar, segundo o “The Woodmans”.</p>
+<p>Na atualidade, um jovem que tem se destacado na fotografia como arte mais conceitual ou, em alguns casos, surreal, é o fotógrafo Kyle Thompson, que tem também Francesca Woodman como fonte de inspiração. Vale á pena conhecer igualmente o seu trabalho.</p>
+
+   
+ </div>
+<div class="mat-quote" style="width: 340px; text-align: right; margin: 200px 0px 0px 150px;">""Francesca conseguiu<br> revelar sua alma por meio<br> de exposição do corpo"</div> 
+ 
+</div>
+             
+             
+             
+           </li>
+       </ul>
+   </div>     
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="-webkit-animation: cores 10s linear infinite; padding: 40px; color: #fff; font: 900 16px open sans;">
+  SE PÁ CÊ VOLTA E A GENTE TROCA UMA IDEIA
+</div>
+
+
+		</div></center></body>
+	</html>
